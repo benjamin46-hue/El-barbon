@@ -33,11 +33,15 @@
 
 
 
-                <nav class="flex gap-24 justify-center items-center mt-10">
+                <nav class="flex gap-24 md:justify-center justify-between items-center mt-10  w-full max-w-[400px]">
+
                     <div class="flex">
                         <img src="Imagenes/Barbon.png"  class="w-14 h-14 object-cover" alt="El Barbón">
                     </div>
-                    <ul class="flex gap-12 text-white justify-center hidden md:flex items-center text-xs  md:text-xl">
+
+                    <div class="flex gap-20">
+
+                    <ul class="flex gap-12 text-white justify-between hidden md:flex items-center text-xs  md:text-xl">
                         <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Home</a></li>
                         <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Nosotros</a></li>
                         <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Servicios</a></li>
@@ -46,14 +50,16 @@
                     </ul>
 
                     <button
-                        class="text-white border hover:bg-[#F9E983] transition hover:text-black border-[#F9E983] rounded-md w-[135px] h-[48px] hidden">
+                        class="text-white border hover:bg-[#F9E983] transition hover:text-black border-[#F9E983] rounded-md w-[135px] h-[48px] hidden md:block ">
                         Cotizar
                     </button>
-                </nav>
-
-                    <button id="menu-btn" class="text-2xl md:hidden">
+                    <button id="menu-btn" class="text-2xl md:hidden bg-amber-50 size-14 rounded-full text-black hover:text-black cursor-pointer transition  animate-zoom-in transition-transform hover:scale-120">
                         ☰
                     </button>
+                    </div>
+                </nav>
+
+
                     <div id="mobile-menu" class="hidden flex-col gap-4 pt-5 ">
                         <a href="" class="hover:text-[#F9E983] transition duration-200">Home</a>
                         <a href="" class="hover:text-[#F9E983] transition duration-200">Nosotros</a>
@@ -63,10 +69,10 @@
 
                     </div>
             </header>
-            <section class="flex justify-center items-center flex-col">
+            <section class="flex justify-center items-center flex-col ">
+                
 
-
-                <div class="w-[500px] mr-auto ml-40 mt-20 flex flex-col gap-10">
+                <div class=" w-full max-w-[500px] px-6 md:px-0 mx-auto md:mr-auto md:ml-40 mt-30 md:mt-20 flex flex-col gap-6 gap-10">
                     <div>
                         <div class="border text-white text-sm border-[#F9E983] rounded-2xl 
                     h-10 w-64 flex justify-center items-center 
@@ -74,8 +80,8 @@
                             El Barbon · Calidad superior
                         </div>
                     </div>
-                    <div class="w-[500px]">
-                        <p class="md:text-5xl text-wrap font-semibold text-white">Cortes y diseños - Elegancia y estilos a
+                    <div class="w-full ">
+                        <p class="md:text-5xl text-4xl text-wrap font-semibold text-white">Cortes y diseños - Elegancia y estilos a
                             tu
                             gusto</p>
                     </div>
@@ -114,12 +120,13 @@
 
 
 
-        <section>
+        <section class="timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]
+">
 
-            <div class="max-w-5xl mx-auto ">
+            <div class=" max-w-5xl mx-auto ">
 
 
-                <div class="flex flex-row items-center justify-center gap-10">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-0">
 
                     <div>
 
@@ -128,18 +135,18 @@
                             <p class="text-white/92 text-sm ">Sobre nosotros</p>
                         </div>
 
-                        <div class="text-white mt-10">
-                            <H2 class="text-5xl font-semibold">Sobre <span class="text-[#FFFFFF]/53">Nosotros</span>
+                        <div class="text-white mt-10 ">
+                            <H2 class="text-3xl md:text-5xl font-semibold">Sobre <span class="text-[#FFFFFF]/53">Nosotros</span>
                             </H2>
 
                         </div>
 
                         <div>
-                            <hr class="border-t-2 border-white w-18 mt-4">
+                            <hr class="border-t-2 border-white w-18 mt-4 ">
                         </div>
 
                         <div class="mt-7">
-                            <p class="text-white text-sm w-120">Barbería El Barbón cuenta con más de 7 años de
+                            <p class="text-white text-sm w-full ml-2 md:w-120">Barbería El Barbón cuenta con más de 7 años de
                                 experiencia
                                 dedicados a la barbería profesional. Nos especializamos exclusivamente en el corte de
                                 cabello masculino, diseño de barba y cuidado del vello facial. Nos encontramos ubicados
@@ -151,7 +158,7 @@
                                 estilo
                                 que se adapte a tu personalidad.</p>
                         </div>
-                        <div class="flex flex-row mt-10 gap-4">
+                        <div class="flex flex-row flex-wrap mt-10 gap-4">
 
                             <div class="flex flex-col border border-[#F9E983] h-40 w-37 rounded-2xl p-3">
 
@@ -201,8 +208,8 @@
 
                 </div>
 
-                             <div class="mt-30">
-                    <img src=" Imagenes/Ele.png" class=" h-90 w-210 rounded-2xl " alt="">
+                             <div class="mt-16 md:mt-30 px-4 md:px-0"> 
+                    <img src=" Imagenes/Ele.png" class=" h-auto w-full md:h-90 md:w-210 rounded-2xl " alt="El Barbón barbería">
                             </div>
                         </div>
                     </div>
@@ -214,7 +221,7 @@
                 <div>
 
                     <div>
-                        <h2 class="text-white text-5xl font-semibold ">Cortes</h2>
+                        <h2 class="text-white text-3xl md:text-5xl font-semibold ">Cortes</h2>
 
                     </div>
                     <div>
@@ -222,10 +229,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col items-center justify-center mt-20">
+                <div class="flex flex-col items-center justify-center mt-20 px-4 md:px-0">
                     <div>
                         <img src="Imagenes/490738639_1310723584390095_7859206419729720891_n.jpg"
-                            class="rounded-2xl h-120 w-180" alt="">
+                            class="rounded-2xl h-auto w-full max-w-[720px] md:h-120 md:w-180" alt="Corte de cabello masculino">
                     </div>
                     <div class="flex flex-row gap-1 mt-2">
                         <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
@@ -241,7 +248,6 @@
                         <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
                         <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
                         <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-
                     </div>
 
 
@@ -252,10 +258,10 @@
 
         <section>
 
-            <div class="max-w-5xl mx-auto ">
+            <div class="max-w-5xl mx-auto">
 
                 <div class="text-white mt-10">
-                    <H2 class="text-5xl font-semibold">Nuestros <span class="text-[#FFFFFF]/53">servicios
+                    <H2 class="text-3xl md:text-5xl font-semibold">Nuestros <span class="text-[#FFFFFF]/53">servicios
                         </span></H2>
 
                 </div>
@@ -266,9 +272,9 @@
 
                     <div>
 
-                        <div class="flex flex-row mt-10 gap-4">
+                        <div class="flex flex-col md:flex-row mt-10 gap-4">
 
-                            <div class="flex flex-col border border-[#F9E983] h-60 w-85 rounded-2xl p-5">
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
                                 <div class="flex justify-between">
                                     <p class="text-[#FFFFFF]/65 text-2xl">01</p>
                                     <i data-lucide="scissors" class="w-8 h-8 text-[#F9E983]"></i>
@@ -285,7 +291,7 @@
                                 </p>
                             </div>
 
-                            <div class="flex flex-col border border-[#F9E983] h-60 w-85 rounded-2xl p-5">
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
                                 <div class="flex justify-between">
                                     <p class="text-[#FFFFFF]/65 text-2xl">02</p>
                                     <i class="fa-solid fa-user-tie text-white"></i>
@@ -299,7 +305,7 @@
 
                                 </p>
                             </div>
-                            <div class="flex flex-col border border-[#F9E983] h-60 w-85 rounded-2xl p-5">
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
                                 <div class="flex justify-between">
                                     <p class="text-[#FFFFFF]/65 text-2xl">03</p>
 
@@ -340,7 +346,7 @@
             <div class="max-w-5xl mx-auto ">
 
                 <div class="text-white mt-10">
-                    <H2 class="text-5xl font-semibold">Lo que dicen <span class="text-[#FFFFFF]/53">nuestros
+                    <H2 class="text-3xl md:text-5xl font-semibold">Lo que dicen <span class="text-[#FFFFFF]/53">nuestros
                             clientes</span>
                     </H2>
 
@@ -348,12 +354,12 @@
                 <div>
                     <hr class="border-t-2 border-white w-18 mt-4">
                 </div>
-                <div class="flex flex-row items-center justify-center gap-4">
+                <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-4 px-4 md:px-0 ">
 
                     <div
-                        class="flex flex-col h-50 w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+                        class="flex flex-col h-auto min-h-50 w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
 
-                        <div class="flex justify-between w-66">
+                        <div class="flex justify-between w-full md:w-66">
                             <div>
                                 <p class="font-semibold">jhonatan</p>
                             </div>
@@ -382,11 +388,11 @@
                     </div>
 
                     <div
-                        class="flex flex-col h-50 w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+                        class="flex flex-col min-h-50 h-auto w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
 
-                        <div class="flex justify-between w-66">
+                        <div class="flex justify-between w-full md:w-66">
                             <div>
-                                <p class="font-semibold">jhonatan</p>
+                                <p class="font-semibold">Benjamin</p>
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
@@ -405,18 +411,17 @@
                         <div>
 
                             <p class="text-white text-sm mt-5">
-                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
-                                imagen
+                                Servicio impecable, puntualidad con las citas y un ambiente de diez. Fui a hacerme un degradado y quedé hermano, el resultado fue perfecto. Se nota la experiencia y la pasión por lo que hacen.
                             </p>
                         </div>
 
                     </div>
                     <div
-                        class="flex flex-col h-50 w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+                        class="flex flex-col min-h-50 h-auto w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
 
-                        <div class="flex justify-between w-66">
+                        <div class="flex justify-between w-full md:w-66">
                             <div>
-                                <p class="font-semibold">jhonatan</p>
+                                <p class="font-semibold">Fernando</p>
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
@@ -435,18 +440,17 @@
                         <div>
 
                             <p class="text-white text-sm mt-5">
-                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
-                                imagen
+                                Buen servicio y buena atención 10 / 10
                             </p>
                         </div>
 
                     </div>
                     <div
-                        class="flex flex-col h-50 w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+                        class="flex flex-col min-h-50 h-auto w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
 
-                        <div class="flex justify-between w-66">
+                        <div class="flex justify-between w-full md:w-66">
                             <div>
-                                <p class="font-semibold">jhonatan</p>
+                                <p class="font-semibold">GiosoyGio</p>
                             </div>
                             <div>
                                 <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
@@ -465,8 +469,7 @@
                         <div>
 
                             <p class="text-white text-sm mt-5">
-                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
-                                imagen
+                               Excelente servicio
                             </p>
                         </div>
 
@@ -482,7 +485,7 @@
             <div class="max-w-5xl mx-auto  ">
 
                 <div class="text-white mt-10">
-                    <H2 class="text-5xl font-semibold">Precios
+                    <H2 class="text-3xl md:text-5xl font-semibold">Precios
                     </H2>
 
                 </div>
@@ -490,7 +493,7 @@
                     <hr class="border-t-2 border-white w-18 mt-4">
                 </div>
                 <div class="flex items-center justify-center">
-                    <div class="grid grid-cols-3 gap-x-12 gap-y-20 mt-10 ">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 gap-x-8 md:gap-x-12 gap-y-20 md:gap-y-20 px-4 md:px-0">
 
                         <div class="">
                             <img src="Imagenes/fade-bajo.webp" alt="Fade Bajo"
@@ -567,8 +570,8 @@
 
             <div class="max-w-5xl mx-auto  ">
 
-                <div class="flex flex-row items-center justify-center gap-10">
-                    <div class="h-107  w-130 border p-6 border-white/10 bg-neutral-950">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-0">
+                    <div class="h-auto w-full md:h-107 md:w-130 border p-6 border-white/10 bg-neutral-950">
 
                         <div class="mt-8">
                             <h2 class="text-2xl font-semibold ml-4">Escribenos hoy</h2>
@@ -612,7 +615,7 @@
 
 
                     <form
-                        class="contact-form-anim order-1 rounded-none border border-white/10 bg-neutral-950 p-6 sm:p-8 md:order-2 md:col-span-7"
+                        class="contact-form-anim order-1 w-full rounded-none border border-white/10 bg-neutral-950 p-6 sm:p-8 md:order-2 md:col-span-7"
                         novalidate="" aria-describedby="contacto-ayuda" method="get">
                         <fieldset>
                             <legend class="sr-only">Datos personales</legend>
@@ -632,7 +635,7 @@
                             </div>
                         </fieldset>
                         <fieldset class="mt-5">
-                            <legend class="sr-only">Contacto y ubicación</legend>
+                            <legend class="sr-only">Numero de teléfono</legend>
                             <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input id="numero"
                                         type="tel" placeholder=" " autocomplete="tel" inputmode="tel"
                                         class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
@@ -692,7 +695,7 @@
 
     </main>
     <footer class="text-center p-5">
-        <p>Creado por @tutrasero46s</p>
+        <p>Creado por @benjaminhue-46</p>
     </footer>
 </body>
 

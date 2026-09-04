@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Barbón </title>
+    <link rel="stylesheet" href="./assets/output.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+</head>
+
+<body class="bg-black font-['Montserrat'] text-white">
+
+    <section class="bg-[url('Imagenes/unnamed.jpg')] bg-cover bg-center min-h-screen relative">
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div class="relative z-10">
+
+            <header class="flex justify-center items-center gap-20 ">
+
+
+
+                <nav class="flex gap-24 justify-center items-center mt-10">
+                    <div class="flex">
+                        <img src="Imagenes/Barbon.png"  class="w-14 h-14 object-cover" alt="El Barbón">
+                    </div>
+                    <ul class="flex gap-12 text-white justify-center hidden md:flex items-center text-xs  md:text-xl">
+                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Home</a></li>
+                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Nosotros</a></li>
+                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Servicios</a></li>
+                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Proyectos</a></li>
+                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Contacto</a></li>
+                    </ul>
+
+                    <button
+                        class="text-white border hover:bg-[#F9E983] transition hover:text-black border-[#F9E983] rounded-md w-[135px] h-[48px] hidden">
+                        Cotizar
+                    </button>
+                </nav>
+
+                    <button id="menu-btn" class="text-2xl md:hidden">
+                        ☰
+                    </button>
+                    <div id="mobile-menu" class="hidden flex-col gap-4 pt-5 ">
+                        <a href="" class="hover:text-[#F9E983] transition duration-200">Home</a>
+                        <a href="" class="hover:text-[#F9E983] transition duration-200">Nosotros</a>
+                        <a href="" class="hover:text-[#F9E983] transition duration-200">Servicios</a>
+                        <a href="" class="hover:text-[#F9E983] transition duration-200">Proyectos</a>
+                        <a href="" class="hover:text-[#F9E983] transition duration-200">Contacto</a>
+
+                    </div>
+            </header>
+            <section class="flex justify-center items-center flex-col">
+
+
+                <div class="w-full max-w-[500px] px-6 md:px-0 mx-auto md:mr-auto md:ml-40 mt-10 md:mt-20 flex flex-col gap-6 md:gap-10">
+                    <div>
+                        <div class="border text-white text-sm border-[#F9E983] rounded-2xl 
+                    h-10 w-64 flex justify-center items-center 
+                    bg-[#969696]/29 ">
+                            El Barbon · Calidad superior
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-3xl md:text-5xl text-wrap font-semibold text-white">Cortes y diseños - Elegancia y estilos a
+                            tu
+                            gusto</p>
+                    </div>
+                    <div>
+
+                        <hr class="border-white w-28 border-t-3 ">
+                        <p class="text-white mt-3">7 años de experiencia</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-center 
+                    text-white border text-white text-sm border-[#F9E983] bg-[#969696]/29
+                    w-full md:w-104 h-auto py-4 md:h-23
+                    ">
+                            <p class="text-center">Conocenos en Villa el Salvador · Micaela <br>Bastidas - Av. 1ero De
+                                Mayo
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button
+                            class="text-white border border-white rounded-md w-[135px] h-[48px] hover:bg-[#F9E983] hover:text-black transition duration-300">
+                            Cortes
+                        </button>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+
+
+    </section>
+    <main>
+
+
+
+
+        <section>
+
+            <div class="max-w-5xl mx-auto ">
+
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-0">
+
+                    <div>
+
+                        <div
+                            class="mt-20 flex rounded-2xl border border-[#F9E983] w-30 h-7 items-center align-center justify-center bg-[#969696]/29">
+                            <p class="text-white/92 text-sm ">Sobre nosotros</p>
+                        </div>
+
+                        <div class="text-white mt-10">
+                            <H2 class="text-3xl md:text-5xl font-semibold">Sobre <span class="text-[#FFFFFF]/53">Nosotros</span>
+                            </H2>
+
+                        </div>
+
+                        <div>
+                            <hr class="border-t-2 border-white w-18 mt-4">
+                        </div>
+
+                        <div class="mt-7">
+                            <p class="text-white text-sm w-full md:w-120">Barbería El Barbón cuenta con más de 7 años de
+                                experiencia
+                                dedicados a la barbería profesional. Nos especializamos exclusivamente en el corte de
+                                cabello masculino, diseño de barba y cuidado del vello facial. Nos encontramos ubicados
+                                en
+                                el distrito de Villa El Salvador.
+                                Te acompañamos brindándote servicios de corte de cabello, ondulaciones, tendencias de
+                                corte,
+                                peinados y coloración capilar, ayudándote a proyectar la mejor versión de ti con un
+                                estilo
+                                que se adapte a tu personalidad.</p>
+                        </div>
+                        <div class="flex flex-row flex-wrap mt-10 gap-4">
+
+                            <div class="flex flex-col border border-[#F9E983] h-40 w-37 rounded-2xl p-3">
+
+                                <p class="text-white text-5xl font-semibold">7 <span
+                                        class="text-[#FFFFFF]/65 text-2xl">+</span></p>
+                                <div class="items-center justify-center flex -mt-3">
+                                    <hr class="border-t-2 border-white w-36 mt-4">
+                                </div>
+                                <p class="text-white mt-1">
+                                    Años
+                                </p>
+                                <p class="text-[#FFFFFF]/53 text-sm" ">
+                                de experiencia
+                                en el rubro
+                            </p>
+                        </div>
+                         <div class=" flex flex-col border border-[#F9E983] h-40 w-37 rounded-2xl p-3">
+
+                                <p class="text-white text-5xl font-semibold">100 <span
+                                        class="text-[#FFFFFF]/65 text-2xl">%</span></p>
+                                <div class="items-center justify-center flex -mt-3">
+                                    <hr class="border-t-2 border-white w-36 mt-4">
+                                </div>
+                                <p class="text-white mt-1">
+                                    Servicio
+                                </p>
+                                <p class="text-[#FFFFFF]/53 text-sm" ">
+                                Integral
+                            </p>
+                        </div>
+                        <div class=" flex flex-col border border-[#F9E983] h-40 w-37 rounded-2xl p-3">
+
+                                <p class="text-white text-5xl font-semibold">1 <span
+                                        class="text-[#FFFFFF]/65 text-2xl">:1</span></p>
+                                <div class=" flex -mt-3">
+                                    <hr class="border-t-2 border-white w-5 mt-4">
+                                </div>
+                                <p class="text-white mt-1">
+                                    Asesoramiento
+                                </p>
+                                <p class="text-[#FFFFFF]/53 text-sm" ">
+                                y atención
+                                personalizada
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                             <div class="mt-16 md:mt-30 px-4 md:px-0">
+                    <img src="Imagenes/Ele.png" class="h-auto w-full md:h-90 md:w-210 rounded-2xl " alt="El Barbón - interior del local">
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+        <section class="mt-15">
+            <div class="max-w-5xl mx-auto">
+                <div>
+
+                    <div>
+                        <h2 class="text-white text-3xl md:text-5xl font-semibold ">Cortes</h2>
+
+                    </div>
+                    <div>
+                        <hr class="border-t-2 border-white w-18 mt-4">
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center justify-center mt-20 px-4 md:px-0">
+                    <div>
+                        <img src="Imagenes/490738639_1310723584390095_7859206419729720891_n.jpg"
+                            class="rounded-2xl h-auto w-full max-w-[720px] md:h-120 md:w-180" alt="Corte de cabello realizado en El Barbón">
+                    </div>
+                    <div class="flex flex-row gap-1 mt-2">
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+
+            <div class="max-w-5xl mx-auto ">
+
+                <div class="text-white mt-10">
+                    <H2 class="text-3xl md:text-5xl font-semibold">Nuestros <span class="text-[#FFFFFF]/53">servicios
+                        </span></H2>
+
+                </div>
+                <div>
+                    <hr class="border-t-2 border-white w-18 mt-4">
+                </div>
+                <div class="flex flex-row items-center justify-center gap-20 px-4 md:px-0">
+
+                    <div>
+
+                        <div class="flex flex-col md:flex-row mt-10 gap-4">
+
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
+                                <div class="flex justify-between">
+                                    <p class="text-[#FFFFFF]/65 text-2xl">01</p>
+                                    <i data-lucide="scissors" class="w-8 h-8 text-[#F9E983]"></i>
+                                </div>
+                                <p class="text-white font-semibold  mt-5">
+                                    Cortes y estilos
+                                </p>
+                                <p class="text-white text-xs mt-5">
+                                    Diseñamos cortes clasicos masculinos, cortes modernos, tendencias actuales,
+                                    degradados
+                                    (Fade bajo, medio, alto), taper fade, cortes con diseños, cortes para niños, corte
+                                    ejecutivo y mucho más.
+
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
+                                <div class="flex justify-between">
+                                    <p class="text-[#FFFFFF]/65 text-2xl">02</p>
+                                    <i class="fa-solid fa-user-tie text-white"></i>
+                                </div>
+                                <p class="text-white font-semibold  mt-5">
+                                    Barba y cuidado facial
+                                </p>
+                                <p class="text-white text-xs mt-5">
+                                    Hacemos perfilado de barba, diseño de barba personalizada, afeitado clasico con
+                                    navaja, arreglo y mantenimiento de barba y limpieza masculina.
+
+                                </p>
+                            </div>
+                            <div class="flex flex-col border border-[#F9E983] h-60 w-full md:w-85 rounded-2xl p-5">
+                                <div class="flex justify-between">
+                                    <p class="text-[#FFFFFF]/65 text-2xl">03</p>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-6 h-6 text-white">
+                                        <path d="M4 18c0-6 2-11 8-11s8 5 8 11" />
+                                        <path d="M4 18c1-2 2-3 2-6" />
+                                        <path d="M8 18c1-3 1-5 1-8" />
+                                        <path d="M12 18c0-4 0-6 0-9" />
+                                        <path d="M16 18c-1-3-1-5-1-8" />
+                                        <path d="M20 18c-1-2-2-3-2-6" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-white font-semibold  mt-5">
+                                    Cabello
+                                </p>
+                                <p class="text-white text-xs mt-5">
+                                    Realizamos ondulaciones permanentes, Peinados para eventos, coloracion capilar,
+                                    tintes masculinos, mechas, reflejos, texturizado de cabello.
+
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="max-w-5xl mx-auto ">
+
+                <div class="text-white mt-10">
+                    <H2 class="text-3xl md:text-5xl font-semibold">Lo que dicen <span class="text-[#FFFFFF]/53">nuestros
+                            clientes</span>
+                    </H2>
+
+                </div>
+                <div>
+                    <hr class="border-t-2 border-white w-18 mt-4">
+                </div>
+                <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-4 px-4 md:px-0 md:flex-wrap">
+
+                    <div
+                        class="flex flex-col h-auto min-h-50 w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+
+                        <div class="flex justify-between w-66">
+                            <div>
+                                <p class="font-semibold">jhonatan</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <p class="text-white text-sm mt-5">
+                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
+                                imagen
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="flex flex-col h-auto min-h-50 w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+
+                        <div class="flex justify-between w-66">
+                            <div>
+                                <p class="font-semibold">jhonatan</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <p class="text-white text-sm mt-5">
+                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
+                                imagen
+                            </p>
+                        </div>
+
+                    </div>
+                    <div
+                        class="flex flex-col h-auto min-h-50 w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+
+                        <div class="flex justify-between w-66">
+                            <div>
+                                <p class="font-semibold">jhonatan</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <p class="text-white text-sm mt-5">
+                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
+                                imagen
+                            </p>
+                        </div>
+
+                    </div>
+                    <div
+                        class="flex flex-col h-auto min-h-50 w-full md:w-80 border gap-3 bg-[#171717]/70 border-[#484848] rounded-2xl mt-10 p-5">
+
+                        <div class="flex justify-between w-66">
+                            <div>
+                                <p class="font-semibold">jhonatan</p>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs "></i>
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+                                <i class="fa-solid fa-star text-[#FFAE00] text-xs"></i>
+
+
+                            </div>
+                        </div>
+
+                        <div>
+
+                            <p class="text-white text-sm mt-5">
+                                Excelente servicio, recomiendo que lo visiten agradable local y expertos en servicio de
+                                imagen
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="max-w-5xl mx-auto  ">
+
+                <div class="text-white mt-10">
+                    <H2 class="text-3xl md:text-5xl font-semibold">Precios
+                    </H2>
+
+                </div>
+                <div>
+                    <hr class="border-t-2 border-white w-18 mt-4">
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 md:gap-x-12 gap-y-10 md:gap-y-20 mt-10 px-4 md:px-0">
+
+                        <div class="">
+                            <img src="Imagenes/fade-bajo.webp" alt="Fade Bajo"
+                                class="w-full h-full object-cover aspect-square rounded-lg " />
+                            <div>
+                                <h2 class="font-semibold mt-4">Fade Bajo</h2>
+                                <p>25 S/</p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="">
+                            <img src="Imagenes/fade-medio.jfif" alt="Fade Medio"
+                                class="w-full h-full object-cover aspect-square rounded-lg " />
+                            <div>
+                                <h2 class="font-semibold mt-4">Fade Medio</h2>
+                                <p>25 S/</p>
+                            </div>
+
+
+                        </div>
+                        <div class="">
+                            <img src="Imagenes/fade-alto.jfif" alt="Fade Alto"
+                                class="w-full h-full object-cover aspect-square rounded-lg " />
+                            <div>
+                                <h2 class="font-semibold mt-4">Fade Alto</h2>
+                                <p>25 S/</p>
+                            </div>
+
+
+                        </div>
+                        <div class="">
+                            <img src="Imagenes/taper.jpg" alt="Taper-fade"
+                                class="w-full h-full object-cover aspect-square  rounded-lg" />
+                            <div>
+                                <h2 class="font-semibold mt-4">Taper-fade</h2>
+                                <p>25 S/</p>
+                            </div>
+
+
+                        </div>
+                        <div class="">
+                            <img src="Imagenes/texturizado.jpg" alt="Texturizado"
+                                class="w-full h-full object-cover aspect-square rounded-lg " />
+                            <div>
+                                <h2 class="font-semibold mt-4">Texturizado</h2>
+                                <p>70 S/</p>
+                            </div>
+
+
+                        </div>
+                        <div class="">
+                            <img src="Imagenes/mohicano.jfif" alt="Mohicano"
+                                class="w-full h-full object-cover aspect-square rounded-lg " />
+                            <div>
+                                <h2 class="font-semibold mt-4">Mohicano</h2>
+                                <p>25 S/</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <section class="mt-60">
+
+            <div class="max-w-5xl mx-auto  ">
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10 px-4 md:px-0">
+                    <div class="h-auto w-full md:h-107 md:w-130 border p-6 border-white/10 bg-neutral-950">
+
+                        <div class="mt-8">
+                            <h2 class="text-2xl font-semibold ml-4">Escribenos hoy</h2>
+                            <div class="flex flex-col">
+                                <div class="flex flex-row gap-2 mt-5">
+                                    <div class="bg-[#27272A] flex justify-center items-center size-8 rounded-sm"><i
+                                            class="fa-solid fa-phone text-[#F9E983] text-sm"></i></div>
+                                    <div class="flex flex-col">
+                                        <p class="text-sm font-semibold">+51 980 927 502</p>
+                                        <span class="text-xs text-[#FFFFFF]/33">whatsapp</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2 mt-5">
+                                    <div class="bg-[#27272A] flex justify-center items-center size-8 rounded-sm"><i
+                                            class="fa-solid fa-envelope text-[#F9E983] text-sm"></i></div>
+                                    <div class="flex flex-col">
+                                        <p class="text-sm font-semibold">Chevez@gmail.com</p>
+                                        <span class="text-xs text-[#FFFFFF]/33">email</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2 mt-5">
+                                    <div class="bg-[#27272A] flex justify-center items-center size-8 rounded-sm"><i
+                                            class="fa-solid fa-map-marker-alt text-[#F9E983] text-sm"></i></div>
+                                    <div class="flex flex-col">
+                                        <p class="text-sm font-semibold">Av.Micaela Bastidas con Av.1ro de mayo</p>
+                                        <span class="text-xs text-[#FFFFFF]/33">dirección</span>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2 mt-5">
+                                    <div class="bg-[#27272A] flex justify-center items-center size-8 rounded-sm"><i
+                                            class="fa-regular fa-clock text-[#F9E983] text-sm"></i></i></div>
+                                    <div class="flex flex-col">
+                                        <p class="text-sm font-semibold">12:00 Am - 9:00 Pm</p>
+                                        <span class="text-xs text-[#FFFFFF]/33">horario</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <form
+                        class="contact-form-anim order-1 w-full rounded-none border border-white/10 bg-neutral-950 p-6 sm:p-8 md:order-2 md:col-span-7"
+                        novalidate="" aria-describedby="contacto-ayuda" method="get">
+                        <fieldset>
+                            <legend class="sr-only">Datos personales</legend>
+                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input id="name"
+                                        type="text" placeholder=" " required="" autocomplete="given-name"
+                                        inputmode="text" autocapitalize="words"
+                                        class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
+                                        aria-labelledby="name-label" name="given-name" value=""><span id="name-label"
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Nombre</span></label><label
+                                    class="group relative block"><input id="lastName" type="text"
+                                        placeholder="Tu apellido" required="" autocomplete="family-name"
+                                        inputmode="text" autocapitalize="words"
+                                        class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
+                                        aria-labelledby="lastName-label" name="family-name" value=""><span
+                                        id="lastName-label"
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Apellido</span></label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-5">
+                            <legend class="sr-only">Numero de teléfono</legend>
+                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input id="numero"
+                                        type="tel" placeholder=" " autocomplete="tel" inputmode="tel"
+                                        class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
+                                        aria-labelledby="numero-label" name="tel" value=""><span id="numero-label"
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Numero de teléfono</span></label><label class="group relative block"><input id="where"
+                                        type="text" placeholder="Ej: Loma Verde, Nordelta…"
+                                        autocomplete="address-level2" inputmode="text" autocapitalize="words"
+                                        class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
+                                        aria-labelledby="where-label" name="address-level2" value=""><span
+                                        id="where-label"
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">¿Que corte tienes planeado?</span></label></div>
+                        </fieldset>
+                        <div class="mt-5"><label class="group relative block"><textarea id="message" name="message"
+                                    placeholder=" " required="" rows="4"
+                                    class=" peer min-h-[112px] w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
+                                    aria-label="Mensaje" aria-labelledby="message-label"></textarea><span
+                                    id="message-label"
+                                    class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Cuentanos
+                                    cómo podemos ayudarte:</span></label></div>
+                        <div
+                            class="mt-6 flex flex-col-reverse items-stretch justify-between gap-4 sm:flex-row sm:items-center border-t border-white/10 pt-6">
+                            <p id="contacto-ayuda" class="text-xs font-light text-neutral-400 font-sans">Al enviar,
+                                se abrirá WhatsApp con tu consulta precompletada.</p><button type="submit"
+                                class="inline-flex items-center justify-center gap-3 rounded-none border border-white/30 bg-white/10 px-6 py-3 text-xs font-light uppercase tracking-[0.2em] text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-60 font-sans"
+                                aria-live="polite"><span>ENVIAR POR WHATSAPP</span><svg
+                                    xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M13 5l7 7-7 7"></path>
+                                </svg></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            lucide.createIcons();
+        </script>
+        <script>
+            const lenis = new Lenis();
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+        </script>
+
+        <script>
+            const btn = document.querySelector("#menu-btn");
+            const nav = document.querySelector("#mobile-menu");
+            btn.addEventListener("click", () => {
+                btn.classList.toggle("open");
+                nav.classList.toggle("flex");
+                nav.classList.toggle("hidden");
+            });
+        </script>
+
+    </main>
+    <footer class="text-center p-5">
+        <p>Creado por @benjaminhue-46</p>
+    </footer>
+</body>
+
+</html>
