@@ -1,3 +1,4 @@
+
 Barbería El Barbón - Landing Page
 Sitio web moderno y responsive para Barbería El Barbón, diseñado para presentar sus servicios de corte, cuidado de barba, testimonios de clientes y catálogo de precios.
 
