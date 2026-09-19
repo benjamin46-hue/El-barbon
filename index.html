@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Barbón </title>
+    <title>El Barbón | Barbería en Villa El Salvador - Cortes y diseños</title>
+<meta name="description" content="Barbería El Barbón en Villa El Salvador. 7 años de experiencia en cortes masculinos, fades, diseño de barba y coloración. Av. Micaela Bastidas con Av. 1ro de Mayo.">
+<link rel="icon" href="Imagenes/Barbon.png">
+<meta property="og:title" content="El Barbón | Barbería en Villa El Salvador">
+<meta property="og:description" content="Cortes, fades, barba y color. 7 años de experiencia.">
+<meta property="og:image" content="Imagenes/Barbon.png">
+<meta property="og:type" content="website">
+
     <link rel="stylesheet" href="./assets/output.css">
 
     <link
@@ -17,110 +24,111 @@
         rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
+
+
 
 <body class="bg-black font-['Montserrat'] text-white">
 
-    <section class="bg-[url('Imagenes/unnamed.jpg')] bg-cover bg-center min-h-screen relative">
-
+    <section id="home" class="bg-[url('Imagenes/unnamed.jpg')] bg-cover bg-center min-h-screen relative">
         <div class="absolute inset-0 bg-black/30"></div>
 
         <div class="relative z-10">
+            <header class="flex justify-center items-center">
+                <nav class="flex justify-between items-center mt-10 w-full max-w-[1100px] px-6 md:px-0">
 
-            <header class="flex justify-center items-center gap-20 ">
-
-
-
-                <nav class="flex gap-24 md:justify-center justify-between items-center mt-10  w-full max-w-[400px]">
-
+                    <!-- Logo -->
                     <div class="flex">
-                        <img src="Imagenes/Barbon.png"  class="w-14 h-14 object-cover" alt="El Barbón">
+                        <a href="index.html">
+                            <img src="Imagenes/Barbon.png" class="w-14 h-14 object-cover" alt="El Barbón">
+                        </a>
                     </div>
 
-                    <div class="flex gap-20">
+                    <!-- Ícono Hamburguesa (Móvil) -->
+                    <ion-icon onclick="onToggleMenu(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden text-white z-50" role="img"
+                        aria-label="menu"></ion-icon>
 
-                    <ul class="flex gap-12 text-white justify-between hidden md:flex items-center text-xs  md:text-xl">
-                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Home</a></li>
-                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Nosotros</a></li>
-                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Servicios</a></li>
-                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Proyectos</a></li>
-                        <li><a href="#" class="hover:text-[#F9E983] transition duration-200">Contacto</a></li>
-                    </ul>
+                    <!-- Menú de Navegación (Móvil y Desktop) -->
+                    <div
+                        class="navLinks duration-500 md:static absolute bg-black/90 md:bg-transparent min-h-[60vh] md:min-h-fit left-0 top-[-100%] w-full md:w-auto flex flex-col md:flex-row items-center justify-center gap-8 px-5">
 
-                    <button
-                        class="text-white border hover:bg-[#F9E983] transition hover:text-black border-[#F9E983] rounded-md w-[135px] h-[48px] hidden md:block ">
-                        Cotizar
-                    </button>
-                    <button id="menu-btn" class="text-2xl md:hidden bg-amber-50 size-14 rounded-full text-black hover:text-black cursor-pointer transition  animate-zoom-in transition-transform hover:scale-120">
-                        ☰
-                    </button>
-                    </div>
-                </nav>
+                        <ul
+                            class="flex md:flex-row flex-col items-center gap-8 md:gap-[4vw] text-white text-base md:text-lg font-medium">
+                            <li><a href="#home" class="hover:text-[#F9E983] transition duration-200">Home</a></li>
+                            <li><a href="#sobreNosotros"
+                                    class="hover:text-[#F9E983] transition duration-200">Nosotros</a></li>
+                            <li><a href="#servicios" class="hover:text-[#F9E983] transition duration-200">Servicios</a>
+                            </li>
+                            <li><a href="#precios" class="hover:text-[#F9E983] transition duration-200">Precios</a>
+                            </li>
+                            <li><a href="#contacto" class="hover:text-[#F9E983] transition duration-200">Contacto</a>
+                            </li>
+                        </ul>
 
-
-                    <div id="mobile-menu" class="hidden flex-col gap-4 pt-5 ">
-                        <a href="" class="hover:text-[#F9E983] transition duration-200">Home</a>
-                        <a href="" class="hover:text-[#F9E983] transition duration-200">Nosotros</a>
-                        <a href="" class="hover:text-[#F9E983] transition duration-200">Servicios</a>
-                        <a href="" class="hover:text-[#F9E983] transition duration-200">Proyectos</a>
-                        <a href="" class="hover:text-[#F9E983] transition duration-200">Contacto</a>
-
-                    </div>
-            </header>
-            <section class="flex justify-center items-center flex-col ">
-                
-
-                <div class=" w-full max-w-[500px] px-6 md:px-0 mx-auto md:mr-auto md:ml-40 mt-30 md:mt-20 flex flex-col gap-6 gap-10">
-                    <div>
-                        <div class="border text-white text-sm border-[#F9E983] rounded-2xl 
-                    h-10 w-64 flex justify-center items-center 
-                    bg-[#969696]/29 ">
-                            El Barbon · Calidad superior
+                        <div>
+                            <button
+                                class="text-white border border-[#F9E983] hover:bg-[#F9E983] hover:text-black transition duration-300 rounded-md w-[135px] h-[48px] md:block hidden cursor-pointer">
+                                Cotizar
+                            </button>
                         </div>
                     </div>
-                    <div class="w-full ">
-                        <p class="md:text-5xl text-4xl text-wrap font-semibold text-white">Cortes y diseños - Elegancia y estilos a
-                            tu
-                            gusto</p>
-                    </div>
-                    <div>
 
-                        <hr class="border-white w-28 border-t-3 ">
+                </nav>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="flex justify-center items-center flex-col">
+                <div class="w-full max-w-[500px] px-6 md:px-0 mx-auto md:mr-auto md:ml-40 mt-20 flex flex-col gap-8">
+                    <div>
+                        <div
+                            class="border text-white text-sm border-[#F9E983] rounded-2xl h-10 w-64 flex justify-center items-center bg-[#969696]/20">
+                            El Barbón · Calidad superior
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <p class="md:text-5xl text-4xl font-semibold text-white leading-tight">
+                            Cortes y diseños - Elegancia y estilos a tu gusto
+                        </p>
+                    </div>
+
+                    <div>
+                        <hr class="border-white w-28 border-t-2">
                         <p class="text-white mt-3">7 años de experiencia</p>
                     </div>
+
                     <div>
-                        <div class="flex items-center justify-center 
-                    text-white border text-white text-sm border-[#F9E983] bg-[#969696]/29
-                    w-104 h-23
-                    ">
-                            <p class="text-center">Conocenos en Villa el Salvador · Micaela <br>Bastidas - Av. 1ero De
-                                Mayo
+                        <div
+                            class="flex items-center justify-center text-white border text-sm border-[#F9E983] bg-[#969696]/20 w-full p-4 rounded-lg">
+                            <p class="text-center">Conócenos en Villa el Salvador · Micaela Bastidas - Av. 1ero De Mayo
                             </p>
                         </div>
                     </div>
 
                     <div>
+                        <a href="#cortes">
                         <button
-                            class="text-white border border-white rounded-md w-[135px] h-[48px] hover:bg-[#F9E983] hover:text-black transition duration-300">
+                            class="text-white border border-white rounded-md w-[135px] h-[48px] hover:bg-[#F9E983] hover:text-black transition duration-300 cursor-pointer">
                             Cortes
                         </button>
+                        </a>
                     </div>
-
-
                 </div>
             </section>
         </div>
-
-
     </section>
+
+
     <main>
 
 
 
 
-        <section class="timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]
+        <section id="sobreNosotros" class="timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]
 ">
 
             <div class=" max-w-5xl mx-auto ">
@@ -136,7 +144,8 @@
                         </div>
 
                         <div class="text-white mt-10 ">
-                            <H2 class="text-3xl md:text-5xl font-semibold">Sobre <span class="text-[#FFFFFF]/53">Nosotros</span>
+                            <H2 class="text-3xl md:text-5xl font-semibold">Sobre <span
+                                    class="text-[#FFFFFF]/53">Nosotros</span>
                             </H2>
 
                         </div>
@@ -146,7 +155,8 @@
                         </div>
 
                         <div class="mt-7">
-                            <p class="text-white text-sm w-full ml-2 md:w-120">Barbería El Barbón cuenta con más de 7 años de
+                            <p class="text-white text-sm w-full ml-2 md:w-120">Barbería El Barbón cuenta con más de 7
+                                años de
                                 experiencia
                                 dedicados a la barbería profesional. Nos especializamos exclusivamente en el corte de
                                 cabello masculino, diseño de barba y cuidado del vello facial. Nos encontramos ubicados
@@ -208,15 +218,16 @@
 
                 </div>
 
-                             <div class="mt-16 md:mt-30 px-4 md:px-0"> 
-                    <img src=" Imagenes/Ele.png" class=" h-auto w-full md:h-90 md:w-210 rounded-2xl " alt="El Barbón barbería">
+                             <div class=" mt-16 md:mt-30 px-4 md:px-0">
+                                    <img src="Imagenes/Ele.png" class=" h-auto w-full md:h-90 md:w-210 rounded-2xl "
+                                        alt="El Barbón barbería">
                             </div>
                         </div>
                     </div>
         </section>
 
 
-        <section class="mt-15">
+        <section class="mt-15" id="cortes">
             <div class="max-w-5xl mx-auto">
                 <div>
 
@@ -230,25 +241,15 @@
                 </div>
 
                 <div class="flex flex-col items-center justify-center mt-20 px-4 md:px-0">
-                    <div>
-                        <img src="Imagenes/490738639_1310723584390095_7859206419729720891_n.jpg"
-                            class="rounded-2xl h-auto w-full max-w-[720px] md:h-120 md:w-180" alt="Corte de cabello masculino">
-                    </div>
-                    <div class="flex flex-row gap-1 mt-2">
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                        <div class="w-3.5 h-3.5 rounded-full border border-white hover:bg-white"></div>
-                    </div>
+                    <img id="carruselImg" src="Imagenes/elbarbon5.jpg"
+                        class="rounded-2xl h-auto w-full max-w-[720px] md:h-120 md:w-180" alt="Corte">
+
+                    <div id="puntos" class="flex flex-row gap-1 mt-2"></div>
+
+
+
+                </div>
+            </div>
 
 
 
@@ -256,7 +257,7 @@
         </section>
 
 
-        <section>
+        <section id="servicios" class="mt-20">
 
             <div class="max-w-5xl mx-auto">
 
@@ -341,7 +342,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="testimonios">
 
             <div class="max-w-5xl mx-auto ">
 
@@ -411,7 +412,9 @@
                         <div>
 
                             <p class="text-white text-sm mt-5">
-                                Servicio impecable, puntualidad con las citas y un ambiente de diez. Fui a hacerme un degradado y quedé hermano, el resultado fue perfecto. Se nota la experiencia y la pasión por lo que hacen.
+                                Servicio impecable, puntualidad con las citas y un ambiente de diez. Fui a hacerme un
+                                degradado y quedé hermano, el resultado fue perfecto. Se nota la experiencia y la pasión
+                                por lo que hacen.
                             </p>
                         </div>
 
@@ -469,7 +472,7 @@
                         <div>
 
                             <p class="text-white text-sm mt-5">
-                               Excelente servicio
+                                Excelente servicio
                             </p>
                         </div>
 
@@ -480,7 +483,7 @@
         </section>
 
 
-        <section>
+        <section id="precios">
 
             <div class="max-w-5xl mx-auto  ">
 
@@ -493,7 +496,8 @@
                     <hr class="border-t-2 border-white w-18 mt-4">
                 </div>
                 <div class="flex items-center justify-center">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 gap-x-8 md:gap-x-12 gap-y-20 md:gap-y-20 px-4 md:px-0">
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-10 gap-x-8 md:gap-x-12 gap-y-20 md:gap-y-20 px-4 md:px-0">
 
                         <div class="">
                             <img src="Imagenes/fade-bajo.webp" alt="Fade Bajo"
@@ -566,7 +570,7 @@
 
         </section>
 
-        <section class="mt-60">
+        <section class="mt-60" id="contacto">
 
             <div class="max-w-5xl mx-auto  ">
 
@@ -612,20 +616,18 @@
                         </div>
                     </div>
 
-
-
                     <form
                         class="contact-form-anim order-1 w-full rounded-none border border-white/10 bg-neutral-950 p-6 sm:p-8 md:order-2 md:col-span-7"
-                        novalidate="" aria-describedby="contacto-ayuda" method="get">
+                        id="miForm" novalidate="" aria-describedby="contacto-ayuda" method="get">
                         <fieldset>
                             <legend class="sr-only">Datos personales</legend>
-                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input id="name"
-                                        type="text" placeholder=" " required="" autocomplete="given-name"
+                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input
+                                        id="nombre" type="text" placeholder=" " required="" autocomplete="given-name"
                                         inputmode="text" autocapitalize="words"
                                         class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
                                         aria-labelledby="name-label" name="given-name" value=""><span id="name-label"
                                         class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Nombre</span></label><label
-                                    class="group relative block"><input id="lastName" type="text"
+                                    class="group relative block"><input id="apellido" type="text"
                                         placeholder="Tu apellido" required="" autocomplete="family-name"
                                         inputmode="text" autocapitalize="words"
                                         class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
@@ -636,19 +638,21 @@
                         </fieldset>
                         <fieldset class="mt-5">
                             <legend class="sr-only">Numero de teléfono</legend>
-                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input id="numero"
-                                        type="tel" placeholder=" " autocomplete="tel" inputmode="tel"
+                            <div class="grid gap-5 sm:grid-cols-2"><label class="group relative block"><input
+                                        id="numero" type="tel" placeholder=" " autocomplete="tel" inputmode="tel"
                                         class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
                                         aria-labelledby="numero-label" name="tel" value=""><span id="numero-label"
-                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Numero de teléfono</span></label><label class="group relative block"><input id="where"
-                                        type="text" placeholder="Ej: Loma Verde, Nordelta…"
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">Numero
+                                        de teléfono</span></label><label class="group relative block"><input id="corte"
+                                        type="text" placeholder="Ej: Fade bajo, diseño con líneas…"
                                         autocomplete="address-level2" inputmode="text" autocapitalize="words"
                                         class=" peer w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
                                         aria-labelledby="where-label" name="address-level2" value=""><span
                                         id="where-label"
-                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">¿Que corte tienes planeado?</span></label></div>
+                                        class=" pointer-events-none absolute left-3.5 top-3.5 z-10 select-none bg-neutral-950 px-1 text-[11px] font-sans font-light text-neutral-400 transition-all duration-200 peer-placeholder-shown:top-3.5 peer-placeholder-shown:bg-transparent peer-placeholder-shown:text-neutral-500 peer-placeholder-shown:text-sm peer-focus:-top-2.5 peer-focus:bg-neutral-950 peer-focus:text-[11px] peer-focus:text-white/80 peer-not-placeholder-shown:-top-2.5 peer-not-placeholder-shown:bg-neutral-950 peer-not-placeholder-shown:text-[11px] ">¿Que
+                                        corte tienes planeado?</span></label></div>
                         </fieldset>
-                        <div class="mt-5"><label class="group relative block"><textarea id="message" name="message"
+                        <div class="mt-5"><label class="group relative block"><textarea id="mensaje" name="message"
                                     placeholder=" " required="" rows="4"
                                     class=" peer min-h-[112px] w-full rounded-none border border-white/15 bg-black px-4 py-3.5 text-sm text-white font-sans font-light outline-none transition duration-200 placeholder:text-transparent focus:border-white/50 "
                                     aria-label="Mensaje" aria-labelledby="message-label"></textarea><span
@@ -667,36 +671,141 @@
                                 </svg></button>
                         </div>
                     </form>
-
+                </div>
+            </div>
         </section>
 
         <script>
             lucide.createIcons();
         </script>
-        <script>
-            const lenis = new Lenis();
 
-            function raf(time) {
-                lenis.raf(time);
-                requestAnimationFrame(raf);
-            }
-            requestAnimationFrame(raf);
-        </script>
+
+
+
+
+
 
         <script>
-            const btn = document.querySelector("#menu-btn");    
-        const nav = document.querySelector("#menu");
-        btn.addEventListener("click", () => {
-            btn.classList.toggle("open");
-            nav.classList.toggle("flex");
-            nav.classList.toggle("hidden");
+    const navLinks = document.querySelector('.navLinks');
+    const iconoMenu = document.querySelector('ion-icon[name]');
+
+    function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu';
+        navLinks.classList.toggle('top-[0%]');
+    }
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('top-[0%]');
+            iconoMenu.name = 'menu';
         });
+    });
+</script>
+
+
+
+        <script>
+const imagenes = [
+    "Imagenes/elbarbon5.jpg",
+    "Imagenes/elbarbon6.jpg",
+    "Imagenes/elbarbon7.jpg",
+    "Imagenes/elbaba.jpg"
+];
+let actual = 0;
+let timer;
+const img = document.getElementById('carruselImg');
+const puntos = document.getElementById('puntos');
+
+function render() {
+    img.src = imagenes[actual];
+    puntos.innerHTML = imagenes.map((_, i) =>
+        `<div onclick="ir(${i})" class="w-3.5 h-3.5 rounded-full border border-white cursor-pointer transition ${i === actual ? 'bg-white' : ''}"></div>`
+    ).join('');
+}
+
+function auto() {
+    clearInterval(timer);
+    timer = setInterval(() => { actual = (actual + 1) % imagenes.length; render(); }, 4000);
+}
+
+function ir(i) { actual = i; render(); auto(); }
+
+render();
+auto();
+</script>
+
+<script>
+let touchStartX = 0;
+let touchEndX = 0;
+
+img.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+img.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diferencia = touchStartX - touchEndX;
+
+    if (Math.abs(diferencia) > 50) {
+        if (diferencia > 0) {
+            actual = (actual + 1) % imagenes.length;
+        } else {
+            actual = (actual - 1 + imagenes.length) % imagenes.length;
+        }
+        render();
+        auto();
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            document.getElementById('miForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let nombre = document.getElementById('nombre').value;
+                let apellido = document.getElementById('apellido').value;
+                let numero = document.getElementById('numero').value;
+                let corte = document.getElementById('corte').value;
+                let mensaje = document.getElementById('mensaje').value;
+                let numerocelular = "51933285885";
+
+                let texto = `Hola! Nuevo Mensaje:\n*Nombre:* ${nombre}\n*Apellido:* ${apellido}\n*Numero:*${numero}\n*corte:*${corte}\n*Mensaje:*${mensaje}`;
+
+
+
+
+
+
+                let url = `https://wa.me/${numerocelular}?text=${encodeURIComponent(texto)}`;
+                window.open(url, '_blank');
+            }
+            )
         </script>
+
+
+
 
     </main>
     <footer class="text-center p-5">
         <p>Creado por @benjaminhue-46</p>
     </footer>
+
+    <a href="https://wa.me/51933285885?text=Hola!%20Quiero%20agendar%20un%20corte"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg hover:scale-110 transition duration-300"
+   aria-label="Escríbenos por WhatsApp">
+    <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+</a>
 </body>
 
 </html>
